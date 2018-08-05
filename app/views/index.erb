@@ -9,6 +9,7 @@
       <h2><%= recipe.name %></h2>
       <p>Ingredients: <%= recipe.ingredients %></p>
       <p>Cook time: <%= recipe.cook_time %></p>
+      <a href="/recipes/<%= recipe.id %>">Go to Recipe</a>
     <% end %>
   </body>
 </html>
