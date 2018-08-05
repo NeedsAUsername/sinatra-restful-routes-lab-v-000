@@ -5,6 +5,9 @@
     <title>Recipes</title>
   </head>
   <body>
-    
+    <% @recipes.each do |recipe| %>
+      <h2><%= recipe.name %></h2>
+      <h3><%= recipe.ingredients %></h3>
+      <h3><%= recipe.cook_time %></h3>
   </body>
 </html>
