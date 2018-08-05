@@ -6,7 +6,7 @@
   </head>
   <body>
     <h1>Edit your recipe</h1>
-    <form action="/recipes/#{@recipe.id}" method="post">
+    <form action="/recipes/<%= @recipe.id %>" method="post">
       <input id="hidden" type="hidden" name="_method" value="patch">
       Recipe Name: <input type="text" name="name" value="#{@recipe.name}">
       Ingredients: <input type="text" name="ingredients" value="#{@recipe.ingredients}">
