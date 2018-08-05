@@ -3,10 +3,18 @@ class ApplicationController < Sinatra::Base
     set :public_folder, 'public'
     set :views, 'app/views'
   end
-  get '/' do
+  get '/recipes' do
     erb :index
   end
 
-  get '/new' do
-  end 
+  get '/recipes/new' do
+  end
+
+  get '/recipes/:id' do
+  end
+
+  get '/recipes/:id/edit' do
+  end
+
+  
 end
